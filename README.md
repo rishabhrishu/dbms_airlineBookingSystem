@@ -6,6 +6,7 @@ Welome to Airline Booking System
 Database used here is Oracle 12c .
  * To install it, go to http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
  * The project is not backward compatible, hence please use oracle 12c only
+<br>
 JavaFx is used for front-end development. It can be run on Netbeans.
 
 Steps to run the project :- 
@@ -32,5 +33,5 @@ Steps to run the project :-
  * Note :- Flight between small cities is not on daily basis, and international flights can only be found from Mumbai or Delhi
  * NOTE :- Description of all the tables can be found in airlinedbms.sql file. Comments are present in that file, to explain everything that's  happening at backend.
 
-
+<br>
 Thank You
