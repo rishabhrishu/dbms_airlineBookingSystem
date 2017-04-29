@@ -1,0 +1,11 @@
+
+
+    #paneHomePage{
+        
+        -fx-background-image: url("8.jpg");
+        -fx-background-repeat: stretch;   
+        -fx-background-size: 765 647;
+        -fx-background-position: center center;
+        -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+    }
+

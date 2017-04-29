@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutAllPassengersController">
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="26.0" opacity="0.54" prefHeight="505.0" prefWidth="702.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="Name1" layoutX="50.0" layoutY="262.0" prefHeight="25.0" prefWidth="189.0" visible="false" />
+      <JFXTextField fx:id="Age1" layoutX="320.0" layoutY="262.0" prefHeight="25.0" prefWidth="72.0" visible="false" />
+      <JFXComboBox fx:id="Gender1" layoutX="499.0" layoutY="262.0" prefHeight="25.0" prefWidth="92.0" visible="false" />
+      <JFXTextField fx:id="Name2" layoutX="50.0" layoutY="318.0" prefHeight="25.0" prefWidth="189.0" visible="false" />
+      <JFXTextField fx:id="Age2" layoutX="320.0" layoutY="318.0" prefHeight="25.0" prefWidth="72.0" visible="false" />
+      <JFXComboBox fx:id="Gender2" layoutX="496.0" layoutY="318.0" prefHeight="25.0" prefWidth="98.0" visible="false" />
+      <JFXTextField fx:id="Name3" layoutX="50.0" layoutY="369.0" prefHeight="25.0" prefWidth="189.0" visible="false" />
+      <JFXTextField fx:id="Age3" layoutX="320.0" layoutY="369.0" prefHeight="25.0" prefWidth="72.0" visible="false" />
+      <JFXComboBox fx:id="Gender3" layoutX="502.0" layoutY="369.0" prefHeight="25.0" prefWidth="98.0" visible="false" />
+      <JFXTextField fx:id="Name4" layoutX="50.0" layoutY="422.0" prefHeight="25.0" prefWidth="189.0" visible="false" />
+      <JFXTextField fx:id="Age4" layoutX="320.0" layoutY="422.0" prefHeight="25.0" prefWidth="72.0" visible="false" />
+      <JFXComboBox fx:id="Gender4" layoutX="499.0" layoutY="422.0" prefHeight="25.0" prefWidth="104.0" visible="false" />
+      <JFXTextField fx:id="Name5" layoutX="50.0" layoutY="476.0" prefHeight="25.0" prefWidth="189.0" visible="false" />
+      <JFXTextField fx:id="Age5" layoutX="323.0" layoutY="476.0" prefHeight="25.0" prefWidth="72.0" visible="false" />
+      <JFXComboBox fx:id="Gender5" layoutX="499.0" layoutY="476.0" prefHeight="25.0" prefWidth="104.0" visible="false" />
+      <Text layoutX="126.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="344.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="522.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger Details :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="BookTicketButton" buttonType="RAISED" layoutX="441.0" layoutY="547.0" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: white;" text="Book Ticket" textFill="#141414">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BackButton" buttonType="RAISED" layoutX="613.0" layoutY="547.0" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: white;" text="Back" textFill="#141414">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="17.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Airlines :" />
+      <Text fx:id="AirlinesText" layoutX="63.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="104.0000089108944" />
+      <Text layoutX="190.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" />
+      <Text fx:id="DateText" layoutX="239.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="83.13671860098839" />
+      <Text layoutX="488.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Passengers :" />
+      <Text fx:id="NoOfPassengersText" layoutX="604.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="45.281244948506355" />
+      <Text layoutX="345.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare :" />
+      <Text fx:id="FareText" layoutX="392.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="72.00000616908073" />
+      <Text layoutX="36.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From :" />
+      <Text fx:id="FromText" layoutX="84.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="83.13671875" />
+      <Text layoutX="202.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To :" />
+      <Text fx:id="ToText" layoutX="236.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="83.13671860098839" />
+      <Text layoutX="342.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure :" />
+      <Text fx:id="DepartureText" layoutX="419.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="61.13671875" />
+      <Text layoutX="534.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival :" />
+      <Text fx:id="ArrivalText" layoutX="591.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="71.9999981559813" />
+      <Text fx:id="warning_Text" layoutX="242.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.13671875">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

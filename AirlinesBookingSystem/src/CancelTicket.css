@@ -1,0 +1,11 @@
+
+
+    #paneCancelTicket{
+        
+        -fx-background-image: url("all.jpg");
+        -fx-background-repeat: stretch;   
+        -fx-background-size: 738 494;
+        -fx-background-position: center center;
+        -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+    }
+

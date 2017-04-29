@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="SignUpWindowPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpWindowController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="53.0" opacity="0.54" prefHeight="461.0" prefWidth="771.0" style="-fx-background-color: white;" />
+      <Text layoutX="68.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="413.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aadhar No :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="72.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="413.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nationality :">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="430.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text layoutX="429.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile No :">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <JFXButton fx:id="SignUpButton" blendMode="DARKEN" buttonType="RAISED" layoutX="257.0" layoutY="548.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: white;" text="SignUp" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BackButton" blendMode="DARKEN" buttonType="RAISED" layoutX="395.0" layoutY="548.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: white;" text="Back" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="FirstNameTextField" layoutX="158.0" layoutY="85.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXTextField fx:id="LastNameTextField" layoutX="158.0" layoutY="140.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXDatePicker fx:id="Date_Field" defaultColor="#101111" layoutX="167.0" layoutY="185.0" prefHeight="29.0" prefWidth="155.0" />
+      <JFXTextField fx:id="UsernameTextField" layoutX="167.0" layoutY="245.0" prefHeight="25.0" prefWidth="155.0" />
+      <JFXButton fx:id="CheckAvailabilityButton" blendMode="DARKEN" buttonType="RAISED" layoutX="219.0" layoutY="300.0" style="-fx-background-color: white;" text="Check Avalability" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="NationalityTextField" layoutX="527.0" layoutY="86.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXTextField fx:id="EmailTextField" layoutX="527.0" layoutY="127.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXTextField fx:id="MobileNoTextField" layoutX="527.0" layoutY="172.0" prefHeight="25.0" prefWidth="149.0" />
+      <JFXTextField fx:id="AadharNoTextField" layoutX="524.0" layoutY="222.0" prefHeight="25.0" prefWidth="155.0" />
+      <JFXPasswordField fx:id="PasswordTextField" layoutX="158.0" layoutY="371.0" promptText="Enter Password" />
+      <JFXPasswordField fx:id="ConfirmPasswordTextField" layoutX="158.0" layoutY="416.0" promptText="Confirm Password" />
+      <Text layoutX="405.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line 1" wrappingWidth="89.99999463558197" />
+      <Text layoutX="400.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line 2" wrappingWidth="90.0000031851232" />
+      <Text layoutX="395.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line 3" wrappingWidth="90.0000031851232" />
+      <JFXTextField fx:id="Address_Line1" layoutX="495.0" layoutY="380.0" prefHeight="25.0" prefWidth="265.0" />
+      <JFXTextField fx:id="Address_Line2" layoutX="495.0" layoutY="416.0" prefHeight="25.0" prefWidth="265.0" />
+      <JFXTextField fx:id="Address_Line3" layoutX="495.0" layoutY="447.0" prefHeight="25.0" prefWidth="265.0" />
+      <Text layoutX="543.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="Warning_Text" fill="#110000" layoutX="286.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.0000069141388">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

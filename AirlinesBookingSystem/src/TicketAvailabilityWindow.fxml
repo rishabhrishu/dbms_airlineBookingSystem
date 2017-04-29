@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicketAvailabilityWindowController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="74.0" opacity="0.54" prefHeight="80.0" prefWidth="691.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="MyProfileButton" blendMode="DARKEN" buttonType="RAISED" layoutX="618.0" layoutY="24.0" style="-fx-background-color: white;" text="MyProfile" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="LogOutButton" blendMode="DARKEN" buttonType="RAISED" layoutX="715.0" layoutY="24.0" style="-fx-background-color: white;" text="LogOut" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="ModifyButton" blendMode="DARKEN" buttonType="RAISED" layoutX="716.0" layoutY="77.0" style="-fx-background-color: white;" text="Modify" textFill="#070707">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="26.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="FromText" layoutX="78.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="117.99999432265759">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="211.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="ToText" layoutX="265.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.39257937669754">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="392.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="DateText" layoutX="444.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="107.3925775946118">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="288.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Passengers :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="NoofPassengersText" layoutX="428.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="53.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="564.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="ClassText" layoutX="615.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="85.99999510496855">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TableView fx:id="PlaneTable" layoutX="11.0" layoutY="156.0" prefHeight="237.0" prefWidth="769.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="156.0">
+        <columns>
+          <TableColumn fx:id="AirlinesColumn" prefWidth="184.0" text="Airlines" />
+          <TableColumn fx:id="DepartureColumn" prefWidth="169.0" text="Departure" />
+            <TableColumn fx:id="ArrivalColumn" prefWidth="144.0" text="Arrival" />
+            <TableColumn fx:id="FareColumn" prefWidth="102.0" text="Fare" />
+            <TableColumn fx:id="DurationColumn" prefWidth="154.0" text="Duration" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="BookNowButton" blendMode="DARKEN" buttonType="RAISED" layoutX="602.0" layoutY="413.0" prefHeight="38.0" prefWidth="157.0" style="-fx-background-color: white;" text="Book Now" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="Warning" layoutX="23.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="483.13671875" />
+      <JFXButton fx:id="Home_Botton" blendMode="DARKEN" buttonType="RAISED" layoutX="25.0" layoutY="24.0" style="-fx-background-color: white;" text="Home">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

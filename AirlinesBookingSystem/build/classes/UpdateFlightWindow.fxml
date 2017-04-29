@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="558.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateFlightWindowController">
+   <children>
+      <AnchorPane layoutX="308.0" layoutY="25.0" opacity="0.54" prefHeight="37.0" prefWidth="314.0" style="-fx-background-color: white;" />
+      <JFXButton fx:id="AppplyChangesButton" blendMode="DARKEN" buttonType="RAISED" layoutX="642.0" layoutY="506.0" prefHeight="30.0" prefWidth="143.0" style="-fx-background-color: white;" text="Apply Changes" textFill="#111010" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Text fill="#070707" layoutX="27.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details About Flight" wrappingWidth="242.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="TableFlights" layoutX="5.0" layoutY="91.0" prefHeight="387.0" prefWidth="761.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="91.0">
+        <columns>
+          <TableColumn fx:id="FlightIdColumn" editable="false" prefWidth="93.0" text="Flight ID" />
+          <TableColumn fx:id="SourceColumn" editable="false" prefWidth="94.0" text="Source" />
+            <TableColumn fx:id="DestinationColumn" editable="false" prefWidth="120.0" text="Destination" />
+            <TableColumn fx:id="DepartsColumn" editable="false" prefWidth="103.0" text="Departs" />
+            <TableColumn fx:id="ReachesDestinationColumn" editable="false" prefWidth="91.0" text="Reaches Dest." />
+            <TableColumn fx:id="StatusColumn" prefWidth="181.0" text="Status" />
+            <TableColumn fx:id="SeatsRewmainigColumn" editable="false" prefWidth="106.0" text="#Seats Remaining" />
+        </columns>
+      </TableView>
+      <Text fx:id="Date" layoutX="335.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Selected" wrappingWidth="101.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="DateText" layoutX="474.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="Edit" blendMode="DARKEN" buttonType="RAISED" layoutX="71.0" layoutY="509.0" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: white;" text="Edit" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="HomeButton" blendMode="DARKEN" buttonType="RAISED" layoutX="691.0" layoutY="25.0" style="-fx-background-image: white;" text="HOME">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

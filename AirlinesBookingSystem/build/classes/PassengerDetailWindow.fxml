@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PassengerDetailWindowController">
+   <children>
+      <Text fill="#0d0d0d" layoutX="70.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passengers Details">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="PassengersTable" layoutX="9.0" layoutY="83.0" prefHeight="457.0" prefWidth="756.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="83.0">
+        <columns>
+          <TableColumn fx:id="Pnr" prefWidth="77.0" text="PNR" />
+            <TableColumn fx:id="Flightid" prefWidth="103.0" text="Flight Id" />
+          <TableColumn fx:id="Username" prefWidth="92.0" text="Username" />
+            <TableColumn fx:id="Date_book" prefWidth="115.0" text="Date of Booking" />
+            <TableColumn fx:id="seat" prefWidth="93.0" text="Seats" />
+            <TableColumn fx:id="fare" prefWidth="83.0" text="Fare" />
+            <TableColumn fx:id="datejourney" prefWidth="114.0" text="Date of Journey" />
+            <TableColumn fx:id="status" prefWidth="85.0" text="Status" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="BackButton" blendMode="DARKEN" buttonType="RAISED" layoutX="671.0" layoutY="29.0" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: white;" text="Back" textFill="#1e1d1d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cancel_Ticket_WindowController">
+   <children>
+      <Text layoutX="31.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Ticket To Cancel">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="Home_Botton" blendMode="DARKEN" buttonType="RAISED" layoutX="634.0" layoutY="15.0" style="-fx-background-color: white;" text="Home">
+         <graphic>
+            <ImageView blendMode="DARKEN" fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="CancelTicketTable" layoutX="4.0" layoutY="63.0" prefHeight="284.0" prefWidth="592.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="63.0">
+        <columns>
+          <TableColumn fx:id="PNRColumn" prefWidth="113.0" text="PNR No." />
+          <TableColumn fx:id="DateColumn" prefWidth="131.0" text="Date of Journey" />
+            <TableColumn fx:id="NoofPassengersColumn" prefWidth="84.0" text="# Passengers" />
+            <TableColumn fx:id="SourceColumn" prefWidth="133.0" text="Source" />
+            <TableColumn fx:id="DestinationColumn" prefWidth="135.0" text="Destination" />
+            <TableColumn fx:id="FlightIDColumn" prefWidth="133.0" text="Flight ID" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="CancelTicketButton" blendMode="DARKEN" buttonType="RAISED" layoutX="599.0" layoutY="455.0" opacity="0.54" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: white;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

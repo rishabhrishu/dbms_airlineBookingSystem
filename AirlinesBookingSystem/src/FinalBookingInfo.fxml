@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="278.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinalBookingInfoController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="60.0" opacity="0.54" prefHeight="156.0" prefWidth="741.0" style="-fx-background-color: white;" />
+      <Text fill="#0d0404" layoutX="28.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations..." wrappingWidth="215.13671875">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Ticket Has Been Booked" wrappingWidth="169.13671875" />
+      <Text layoutX="28.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From :" wrappingWidth="39.13671875" />
+      <Text fx:id="From_Text" layoutX="93.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="86.13671875" />
+      <Text layoutX="197.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To :" wrappingWidth="32.13671875" />
+      <Text fx:id="ToTextField" layoutX="256.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.13671469688416" />
+      <Text layoutX="362.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" wrappingWidth="39.13672471046448" />
+      <Text fx:id="DateTextField" layoutX="413.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="86.13671469688416" />
+      <Text layoutX="524.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Passengers :" wrappingWidth="135.13671875" />
+      <Text fx:id="PassengerTextField" layoutX="659.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="39.13672471046448" />
+      <Text layoutX="28.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pnr :" wrappingWidth="39.13672471046448" />
+      <Text fx:id="PnrTextField" layoutX="83.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="145.13671875" />
+      <Text layoutX="318.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Id :" wrappingWidth="63.13671875" />
+      <Text fx:id="FlightIdTextField" layoutX="394.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="94.13671335577965" />
+      <Text layoutX="524.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare (Rs):" wrappingWidth="55.13671944197267" />
+      <Text fx:id="Fare_Text_Field" layoutX="592.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="86.13671754300594" />
+      <JFXButton fx:id="HomeButton" buttonType="RAISED" layoutX="635.0" layoutY="230.0" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: white;" text="Home">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
